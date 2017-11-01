@@ -1,11 +1,5 @@
-var express = require('express');
-var app = express();
-
-app.get('/', function (req, res) {
-  res.send('Hello World!');
+var connect = require('connect');
+var serveStatic = require('serve-static');
+connect().use(serveStatic(__dirname)).listen(8080, function(){
+    console.log('Server running on 8080...');
 });
-
-// use port 3000 unless there exists a preconfigured port
-var port = process.env.port || 3000;
-
-app.listen(port);
