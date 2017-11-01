@@ -8,6 +8,6 @@ app.use(express.static(path.join(__dirname, '')));
 app.get('/*', function (req, res) {
     res.sendFile('index.html', {root: path.join(__dirname, '')});
 });
-app.listen(8080, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log((new Date()) + " Server is listening on port 8080");
 });   
