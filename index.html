@@ -193,13 +193,6 @@
                     </div> <!-- /.heading-section -->
                 </div> <!-- /.row -->
                 <div class="row">
-                    <div class="col-md-12">
-                       <div class="googlemap-wrapper">
-                            <div id="map_canvas" class="map-canvas"></div>
-                        </div> <!-- /.googlemap-wrapper -->
-                    </div> <!-- /.col-md-12 -->
-                </div> <!-- /.row -->
-                <div class="row">
                     <div class="col-md-7 col-sm-6">
                         <p>
 						Por más de 40 años Tu Ruta ha hecho posible el sueño de viajar para miles de personas. Más de 500 colaboradores le han ayudado a cada familia a tener alas, dibujar sonrisas y construir recuerdos inolvidables. Nos caracterizamos como empresa innovadora y visionaria. Orgullosamente nos mantenemos a la vanguardia habiendo convertido nuestra organización en una Corporación que busca mantener su prestigio con una excelente calidad de servicio y la creación de productos que atiendan eficientemente las necesidades de nuestros clientes. Nuestra labor nos ha dado la experiencia que hoy nos conduce a desarrollar una operación de máxima eficiencia, razón por la cual nos unimos al esfuerzo de conservación del medio ambiente y apoyo a las comunidades.
@@ -256,10 +249,6 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 		<script src="https://smtpjs.com/smtp.js"></script>
-        <!-- Google Map -->
-        <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
-        <script src="js/vendor/jquery.gmap3.min.js"></script>
-        <!-- Google Map Init-->
         <script type="text/javascript">
 			
 			function IsAlphabetic(input)
@@ -355,23 +344,8 @@
 				 emailjs.init("user_n5QMZKegqfM5hLqELLerq");
 				 emailjs.send("gmail", "prueba_dint", {"name":name,"message":comments,"phone":phone})
 			}
-            jQuery(function($){
-                $('#map_canvas').gmap3({
-                    marker:{
-                        address: '9.8539756, -83.9336075' 
-                    },
-                        map:{
-                        options:{
-                        zoom: 15,
-                        scrollwheel: false,
-                        streetViewControl : true
-                        }
-                    }
-                });
-				
-                $('body').bind('touchstart', function() {});
-            });
 			
+						
 			$('#submit').click(function (){
 				var name = $('#name').val();
 				var email = $('#email').val(); 
