@@ -1,20 +1,8 @@
 {
-  "name": "package",
-  "version": "1.0.0",
-  "description": "Aplicacion de Tu Ruta",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-	"start":  "webpack-dev-server --hot"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/deiby-diaz/Prueba-DINT.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/deiby-diaz/Prueba-DINT/issues"
-  },
-  "homepage": "https://github.com/deiby-diaz/Prueba-DINT#readme"
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "connect": "^3.6.5",
+    "serve-static": "^1.13.1"
+  }
 }
